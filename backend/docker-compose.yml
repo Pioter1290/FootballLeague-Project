@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: footballleague_postgres
+    environment:
+      POSTGRES_USER: pawel
+      POSTGRES_PASSWORD: fliga
+      POSTGRES_DB: footballleague
+    ports:
+      - "5432:5432"
+    volumes:
+      - footballleague_data:/var/lib/postgresql/data
+
+volumes:
+  footballleague_data:

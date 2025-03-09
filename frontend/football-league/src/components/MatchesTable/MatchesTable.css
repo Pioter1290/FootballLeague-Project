@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+.main-container {
+    background-color: #e8e8e8;
+    color: #333;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 80vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container.dark {
+    background-color: #222;
+    color: #eee;
+}
+
+
+.matches-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.match {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: calc(50% - 10px);
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.match:hover {
+    background-color: #f3f1f1;
+}
+
+.match.dark {
+    background-color: #333;
+}
+
+.match.dark:hover {
+    background-color: #444;
+}
+
+.league {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.league-icon {
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.team-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-name {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.team-info.left {
+    margin-right: auto;
+}
+
+.team-info.right {
+    margin-left: auto;
+}
+
+.league-name {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.match-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team-name {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.score {
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+
+.match-details,
+.match-date {
+    font-size: 0.9em;
+    margin-top: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.match-details p {
+    margin: 0;
+}
+
+hr {
+    border: 1px solid #eee;
+    margin: 10px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.pagination-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pagination-btn:hover {
+    background-color: #0056b3;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.main-container.light .match-date, .match-result.light .team-name  {
+    color: #555;
+}
+
+
+.main-container.dark .match-date, .match-result.dark .team-name {
+    color: #ddd;
+}
+
+.matches-container {
+    overflow-x: auto;
+}
+.matches-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.matches-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.matches-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
