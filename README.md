@@ -42,37 +42,9 @@ Backend łączy się z bazą danych PostgreSQL za pomocą Spring Data JPA i Hibe
 ### 🔗 Połączenie Backend - Frontend (CORS)
 Połączenie między frontendem a backendem jest możliwe dzięki konfiguracji CORS w Spring Boot, używając narzędzi Spring Web MVC.
 
-## 🚀 Uruchomienie Projektu
 
-### 🛠️ Uruchomienie Backend
-1. Przejdź do katalogu backend:
-   ```sh
-   cd backend
-   ```
-2. Uruchom aplikację:
-   ```sh
-   ./mvnw spring-boot:run
-   ```
 
-### 🖥️ Uruchomienie Frontend
-1. Przejdź do katalogu frontend:
-   ```sh
-   cd frontend
-   ```
-2. Zainstaluj zależności:
-   ```sh
-   npm install
-   ```
-3. Uruchom aplikację:
-   ```sh
-   npm start
-   ```
 
-### 🐳 Uruchomienie całości w Dockerze
-1. Uruchom Docker i w katalogu głównym projektu wpisz:
-   ```sh
-   docker-compose up --build
-   ```
 
 
 
