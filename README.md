@@ -2,7 +2,7 @@
 
 
 ## 📌 Opis Projektu
-FootballLeague to aplikacja do śledzenia wyników i statystyk piłkarskich, ukazująca tabele ligowe, informacje o drużynach, piłkarzach, sędziach oraz wyników meczów. System składa się z backendu napisanego w Java Spring Boot oraz frontendu stworzonego w React. Dane są przechowywane w bazie PostgreSQL, a całość działa w kontenerach Docker.
+FootballLeague to aplikacja do śledzenia wyników i statystyk piłkarskich, ukazująca tabele ligowe, informacje o drużynach, piłkarzach, sędziach oraz wyników meczów. System składa się z backendu napisanego w Java Spring Boot oraz frontendu stworzonego w React. Dane są przechowywane w bazie PostgreSQL.
 
 ## 📂 Struktura projektu
 - **Backend** - Java Spring Boot + PostgreSQL
